@@ -11,7 +11,7 @@ const ProfileDropdown = ({ setIsExpanded }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const request = new Request(
-      "https://audiophile-ecommerce-api.onrender.com/api/users/logout",
+      `${import.meta.env.VITE_BASE_API_URL}/api/users/logout`,
       {
         method: "post",
         credentials: "include",
